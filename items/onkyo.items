@@ -11,6 +11,7 @@ Number onkyoSource         "Source"                  {onkyo="INIT:hometheater:SO
 Number onkyoVideoWide      "Video Wide Mode"         {onkyo="INIT:hometheater:VIDEO_WIDE_QUERY, INCREASE:hometheater:VIDEO_WIDE_NEXT, *:hometheater:#VWM%02X"}
 Number onkyoVideoPicture   "Video Picture Mode"      {onkyo="INIT:hometheater:#VPMQSTN, INCREASE:hometheater:#VPMUP, *:hometheater:#VPM%02X"}
 //Audio Mode
+Number onkyoAudioSel       "Audio"                   {onkyo="INIT:hometheater:#SLAQSTN, INCREASE:hometheater:#SLAUP, DECREASE:hometheater:#SLAUP, *:hometheater:#SLA%02X"}
 Number onkyoListenMode     "Listen Mode"             {onkyo="INIT:hometheater:LISTEN_MODE_QUERY, INCREASE:hometheater:LISTEN_MODE_UP, DECREASE:hometheater:LISTEN_MODE_DOWN, *:hometheater:#LMD%02X"}
 Switch onkyoAudysseyDynEQ  "Audysses Dynamic EQ"     {onkyo="INIT:hometheater:#ADQQSTN, OFF:hometheater:#ADQ00, ON:hometheater:#ADQ01"}
 Number onkyoAudysseyDynVol "Audysses Dynamic Volume" {onkyo="INIT:hometheater:#ADVQSTN, INCREASE:hometheater:#ADVUP, *:hometheater:#ADV%02X"}

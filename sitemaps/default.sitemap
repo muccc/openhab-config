@@ -12,6 +12,7 @@ sitemap onkyo label="muCCC Onkyo Control"
             }
             Frame label="Source" {
                 Selection item=onkyoSource mappings=[16="Arbeitstisch", 1="Playstation 23", 2=Chromecast, 0="Medien Pi", 5="Lounge (Keller)", 43="NET Audiostreams"]
+                Selection item=onkyoAudioSel mappings=[2=Analog, 4=HDMI, 5=Coaxial]
             }
             Frame label="Information" {
                 Text item=onkyoVideo
