@@ -1,1 +1,62 @@
-onkyo.sitemap
+sitemap onkyo label="muCCC Onkyo Control"
+{
+    Frame label="Areas" {
+        Text label="Hauptraum" icon="sofa" {
+            Frame label="Power" {
+                Switch    item=onkyoPower
+                Switch    item=projPower
+            }
+            Frame label="Volume" {
+                Slider item=onkyoVolume
+                Switch item=onkyoMute mappings=[ON="Mute", OFF="Unmute"]
+            }
+            Frame label="Source" {
+                Selection item=onkyoSource mappings=[16="Arbeitstisch", 1="Playstation 23", 2=Chromecast, 0="Medien Pi", 5="Lounge (Keller)", 43="NET Audiostreams"]
+            }
+            Frame label="Information" {
+                Text item=onkyoVideo
+                Text item=onkyoAudio
+            }
+       }
+        Text label="Internetradio" icon="audio" {
+            Frame label="Source" {
+                Selection item=onkyoSource mappings=[16="Arbeitstisch", 1="Playstation 23", 2=Chromecast, 10="Medien Pi", 5="Lounge (Keller)", 43="NET Audiostreams"]
+                Selection item=onkyoNETStream mappings=[23="fpletz", 1="Deep Space One", 2="Mission Control", 3="Defcon 22", 4="Space Station", 5="Drone Zone", 6="d.b", 7="ai", 8="audioasy" ]
+                Switch item=onkyoNETPlayControl mappings=[ON="Play", OFF="Stop", 1="Prev", 2="Next"]
+            }
+
+            Frame label="Volume" {
+                Slider item=onkyoVolume
+                Switch item=onkyoMute label="" mappings=[ON="Mute", OFF="Unmute"]
+            }
+
+            Frame label="Information" {
+                Text item=onkyoNETTitle
+                Text item=onkyoNETPlayStatus
+                Text item=onkyoNETTime
+                /*Text item=onkyoNETArtist
+                  Text item=onkyoNETAlbum
+                  Text item=onkyoNETTrack */
+            }
+        }
+        Text label="Advanced AV" {
+            Frame label="Video Modes" {
+                Selection item=onkyoVideoWide label="Video Wide" mappings=[0=Auto, 1="4:3", 2=Full, 3=Zoom, 4="Wide Zoom", 5="Smart Zoom"]
+                Selection item=onkyoVideoPicture label="Video Picture" mappings=[0=Trough, 1=Custom, 2=Cinema, 3=Game, 5="ISF Day", 6="ISF Night", 7="Streaming", 8=Direct]
+            }
+            Frame label="Audio Modes" {
+                Selection item=onkyoListenMode mappings=[0=Stereo, 1=Direct, 2=Surround, 15=Mono, 31="Whole House Mode", 66="THX Cinema", 31="Whole House"]
+                Switch    item=onkyoAudysseyDynEQ
+                Selection item=onkyoAudysseyDynVol mappings=[0=OFF, 1=Low, 2=Mid, 3=High]
+            }
+             Frame label="Display" {
+                Selection item=onkyoDisplayMode mappings=[0="Source + Vol", 2="Digital Format (temporary)", 3="Video Format (temporary)"]
+                Selection item=onkyoDimmerLevel mappings=[0="Bright", 1="Dim", 2="Dark", 3="Shut-Off", 8="Bright & LED OFF"]
+            }
+ 
+        }
+
+
+    }
+}
+
