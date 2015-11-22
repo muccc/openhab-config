@@ -1,0 +1,3 @@
+//
+// Power
+Switch projPower  "Projector"       {tcp=">[ON:83.133.178.103:23:'MAP(projector.map)'], >[OFF:83.133.178.103:23:'MAP(projector.map)']" // for a Switch Item where values are converted using the projectors.map file in the transform folder
