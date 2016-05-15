@@ -59,5 +59,11 @@ sitemap onkyo label="muCCC Onkyo Control"
 
 
     }
+    Frame label="Licht" {
+        Switch item=kueche
+        Switch item=decke1
+        Switch item=decke2
+        Switch item=reserve
+    }
 }
 

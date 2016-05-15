@@ -1,0 +1,6 @@
+//
+// Power
+Switch kueche  "Küche"     {http=">[ON:POST:http://83.133.178.85:5000/relais/kueche]  >[OFF:DELETE:http://83.133.178.85:5000/relais/kueche]  <[http://83.133.178.85:5000/relais/kueche:10000:REGEX((.*))]" } 
+Switch decke1  "Decke1"    {http=">[ON:POST:http://83.133.178.85:5000/relais/decke1]  >[OFF:DELETE:http://83.133.178.85:5000/relais/decke1]  <[http://83.133.178.85:5000/relais/decke1:10000:REGEX((.*))]" }
+Switch decke2  "Decke2"    {http=">[ON:POST:http://83.133.178.85:5000/relais/decke2]  >[OFF:DELETE:http://83.133.178.85:5000/relais/decke2]  <[http://83.133.178.85:5000/relais/decke2:10000:REGEX((.*))]" }
+Switch reserve "Reserve"   {http=">[ON:POST:http://83.133.178.85:5000/relais/reserve] >[OFF:DELETE:http://83.133.178.85:5000/relais/reserve] <[http://83.133.178.85:5000/relais/reserve:10000:REGEX((.*))]" }
